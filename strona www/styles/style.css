@@ -1,0 +1,50 @@
+.pralka {
+  animation: rotation 1000ms infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+table,tr,th,td{
+	border:1px solid;
+	border-collapse: collapse;
+}
+table{
+width: 100%;
+text-align:center;
+}
+th:nth-child(even) {
+	background-color: aquamarine;
+}
+tr:hover {
+	background-color: coral;
+	}
+.lista_pierwsza{
+	list-style-position: outside;
+	list-style-image:url("star.png");
+}
+.lista_druga{
+	list-style-type: lower-roman;
+}
+.wrapper{
+	width:800px;
+	margin:30px auto;
+	color:#fff;
+	text-align:center;
+}
+h1,h2,h3{
+	font-family: "Roboto", sans-serif;
+	font-weight:100;
+	font-size:2.6em;
+	text-transform:uppercase;
+}
+body{
+	background:#F6546A;
+	font-family:"Arial";
+	height:100%;
+}
