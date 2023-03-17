@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl" style="scroll-behavior:smooth;">
+<head>
+<meta charset="UTF-8">
+<meta http=equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<meta name="description" content="sklep z grami">
+<title>Strona z grami internetowymi</title>
+<link rel="stylesheet" href="../style/sstyle.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body> 
+<p id="czas" class="clock" align="right">
+<script>
+var today = new Date();
+var hour = today.getHours();
+var minutes = today.getMinutes();
+var day = today.getDate();
+var second = today.getSeconds();
+var month = today.getMonth()+1;
+var year = today.getFullYear();
+
+if(minutes < 10 ) minutes ="0"+minutes;
+if(second < 10 ) second ="0"+second;
+
+document.getElementById("czas").innerHTML = hour+":"+minutes+":"+second+"    "+day+"."+month+"."+year;
+</script>
+</p>
+probny tekst
+<div style="background-color:aqua; width:500px; overflow-wrap:">
+<ul class="lista_pierwsza">
+<li>pierwszypierwszypierwszypierwszypierwszypierwszy</li>
+<li>drugidrugidrugidrugidrugidrugidrugi</li>
+<li>trzecitrzecitrzecitrzecitrzecitrzecitrzecitrzecitrzeci</li>
+<li>czwartyczwartyczwartyczwartyczwartyczwartyczwartyczwarty</li>
+</ul>
+<ul class="lista_druga">
+<li>pierwszypierwszypierwszypierwszypierwszypierwszy</li>
+<li>drugidrugidrugidrugidrugidrugidrugi</li>
+<li>trzecitrzecitrzecitrzecitrzecitrzecitrzecitrzecitrzeci</li>
+<li>czwartyczwartyczwartyczwartyczwartyczwartyczwartyczwarty</li>
+</ul>
+<br>
+<ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+</div>
+<img src="steam.png" class="pralka" alt="Strona steama" style="widtch:42px;height:42px;"></img>
+<br>
+<a href="https://store.steampowered.com">steam</a>
+<address>
+Polska<br>
+15-121 Wrocław<br>
+ul.Teczowa<br> 
+</address>
+<table class="tabela" style="border: 1px solid black;">
+<tr>
+<th style="border: 1px solid black;"> Producent</th>
+<th style="border: 1px solid black;"> tytuł</th>
+<th style="border: 1px solid black;"> cena(w zł)</th>
+<th style="border: 1px solid black;"> recenzje</th>
+</tr>
+<tr>
+<th style="border: 1px solid black;">Klei</th>
+<th style="border: 1px solid black;">Don't Starve Together</th>
+<th style="border: 1px solid black;">54</th>
+<th style="border: 1px solid black;">bardzo pozyzywne</th>
+</tr>
+<tr>
+<th style="border: 1px solid black;">Torn Banner Studios</th>
+<th style="border: 1px solid black;">Chivalry 2</th>
+<th style="border: 1px solid black;">169</th>
+<th style="border: 1px solid black;">przytłaczająco pozyzywne</th>
+</tr>
+<th style="border: 1px solid black;">Re-Logic</th>
+<th style="border: 1px solid black;">Terraria</th>
+<th style="border: 1px solid black;">36</th>
+<th style="border: 1px solid black;">przytłaczająco pozyzywne</th>
+</table>
+
+<br>
+<a href="#top">Do góry</a><br>
+<a href="#Lista">lista</a>
+<br>
+<form action="logowanie.php" method="get">
+<p>
+Imie
+<input type="text" name="imie" placeholder="Podaj imie">
+</p>
+<p>
+nazwisko
+<input type="text" name="nazwisko" placeholder="Podaj nazwisko">
+</p>
+<p>
+haslo
+<input type="password" name="haslo" placeholder="Podaj haslo">
+</p>
+<p>
+czy pracujesz<br>
+tak<input type="radio" name="tak">
+nie<input type="radio" name="nie">
+</p>
+<p>
+czy pracujesz<br>
+tak<input type="checkbox" name="tak">
+nie<input type="checkbox" name="nie">
+</p>
+Wyślij:<br> <input type="submit" value="submit">
+</form>
+<br>
+<p>Gry komputerowe</p>
+<p id="better">Gry komputerowe but better </p>
+<br>
+<p align="left">
+Najlepszą stroną z grami jest steam: 
+<a href="https://store.steampowered.com"><img src="steam.png" alt="Strona steama" style="widtch:42px;height:42px;"></img></a>
+</p>
+<ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+<br>
+<ul class="list-group">
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+
+
+  <li class="list-group-item list-group-item-primary">This is a primary list group item</li>
+  <li class="list-group-item list-group-item-secondary">This is a secondary list group item</li>
+  <li class="list-group-item list-group-item-success">This is a success list group item</li>
+  <li class="list-group-item list-group-item-danger">This is a danger list group item</li>
+  <li class="list-group-item list-group-item-warning">This is a warning list group item</li>
+  <li class="list-group-item list-group-item-info">This is a info list group item</li>
+  <li class="list-group-item list-group-item-light">This is a light list group item</li>
+  <li class="list-group-item list-group-item-dark">This is a dark list group item</li>
+</ul>
+</body>
+</html>
